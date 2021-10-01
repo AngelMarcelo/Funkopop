@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #ff00f9 100%);
+    padding: 25px 0px;
+    color: white;
+}
+
+footer{
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+main{
+    margin: 25px;
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja{
+    width: 23%;
+    margin: 10px;
+}
+
+.caja img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 17px grey;
+    /*filter: blur(1px); bloqueo para practica*/
+}
+
+img:hover{
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    /*filter: blur(0px); bloqueado para practica*/
+    transition: 800ms;
+    /*filter: opacity(70px);*/
+   /* filter: grayscale(100%);*/
+   filter: sepia(50%);
+  
+}
+
+/* @media tipo de medio and (condicion){.....}*/
+/* tipo de medio print, screen, speech, all*/
+
+/*dispositivos grandes*
+@media all and (min-width: 991px) {
+    .tituloGrande{
+        height: 250px;
+    }
+}
+
+/* dispositivo mediano*/
+@media all and (min-width: 768px) and( max-width:991px){
+    .caja{
+        width: 30%;
+    }
+}
+
+/* dispositivos pequeños celulares*/
+/*@media all and (min-width:320px) and (max-width:767px){*/
+@media all and (max-width:767px){
+    .caja{
+        width: 95%
+    }
+}
+/* se pueden utilizar ambas formas. La primera especifica el minimo al maximo; la segunda supone que arraca desde un pixel hasta llegar al valor maximo definido*/
